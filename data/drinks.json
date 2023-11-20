@@ -25,7 +25,12 @@
   {
     "id": 3,
     "name": "Cosmopolitan",
-    "ingredients": ["vodka", "triple sec", "cranberry juice", "lime juice"],
+    "ingredients": [
+      "vodka",
+      "triple sec",
+      "cranberry juice",
+      "lime juice"
+    ],
     "description": "A popular cocktail featuring a perfect balance of sweet and tart flavors."
   },
   {
@@ -43,7 +48,20 @@
   {
     "id": 5,
     "name": "Piña Colada",
-    "ingredients": ["white rum", "coconut cream", "pineapple juice"],
+    "ingredients": [
+      "white rum",
+      "coconut cream",
+      "pineapple juice"
+    ],
     "description": "A tropical cocktail that brings the taste of coconut and pineapple together in a creamy blend."
+  },
+  {
+    "id": 6,
+    "name": "classic marthini",
+    "ingredients": [
+      "Gin",
+      "Dry Vermouth"
+    ],
+    "description": "A timeless cocktail made with gin and dry vermouth, typically garnished with an olive or a lemon twist"
   }
 ]

@@ -1,22 +1,32 @@
-h1{
+h1, h2, h3{
     text-align: center;
   }
   body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-image: url('/images/bkg-image.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
   }
   
   .container {
     max-width: 800px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
-  h1 {
+  button {
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; 
+}
+  h1{
     color: #333;
   }
   
@@ -39,11 +49,11 @@ h1{
   }
   
   p {
-    color: #555;
+    color: #111010;
   }
   
   a {
-    color: #007bff;
+    color: #001aff;
     text-decoration: none;
     font-weight: bold;
   }
@@ -52,3 +62,9 @@ h1{
     text-decoration: underline;
   }
   
+  #addDrink {
+    background-color: #2898a7; 
+}
+#deleteDrink{
+    background-color: #ff0000;
+}

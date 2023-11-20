@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drink List</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/drinks.css">
+    <script src="/javascripts/deleteDrink.js"></script>
+    <script src="/javascripts/addNewDrink.js"></script>
 </head>
 <body>
     <div class="container">
@@ -20,9 +22,27 @@
                     <p>ID: <%= drink.id %></p>
                     <p>Ingredients: <%= drink.ingredients.join(', ') %></p>
                     <p>Description: <%= drink.description %></p>
+
+                    <button type="button" id="deleteDrink" onclick="deleteDrink('/drinks/<%= drink.id %>', <%= drink.id %>)">Delete</button>
                 </li>
             <% }); %>
         </ul>
+
+        <div>
+            <h3>Add New Drink</h3>
+            <form id="addDrinkForm" action="/drinks" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="ingredients">Ingredients:</label>
+                <input type="text" id="ingredients" name="ingredients" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="2" required></textarea>
+
+                <button type="button" id="addDrink" onclick="addNewDrink('/drinks')">Add Drink</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
