@@ -1,0 +1,22 @@
+<!-- views/drinkDetail.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= drink.name %></title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/drinkDetails.css">
+</head>
+<body>
+    <div class="container">
+        <h1><%= drink.name %></h1>
+        <p>ID: <%= drink.id %></p>
+        <p>Ingredients: <%= drink.ingredients.join(', ') %></p>
+        <p>Description: <%= drink.description %></p>
+        <div class="back-link">
+            <a href="/drinks">Back to Drink List</a>
+        </div>
+    </div>
+</body>
+</html>

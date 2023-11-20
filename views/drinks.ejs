@@ -1,0 +1,28 @@
+<!-- views/drinks.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink List</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/drinks.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Drink List</h1>
+        <ul>
+            <% drinks.forEach(drink => { %>
+                <li>
+                    <a href="/drinks/<%= drink.id %>">
+                        <h2><%= drink.name %></h2>
+                    </a>
+                    <p>ID: <%= drink.id %></p>
+                    <p>Ingredients: <%= drink.ingredients.join(', ') %></p>
+                    <p>Description: <%= drink.description %></p>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+</body>
+</html>
