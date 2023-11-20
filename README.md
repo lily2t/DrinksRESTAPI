@@ -56,8 +56,8 @@ Usage
 Start the server:
 
 
-    ```bash
-    npm start
+    ```
+     npm start
 
 Open a web browser and navigate to http://localhost:3000 to access the application.
 
